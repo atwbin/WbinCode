@@ -27,7 +27,7 @@ public class HttpsUtils {
     public static class SSLParams {
         public SSLSocketFactory sSLSocketFactory;
         public X509TrustManager trustManager;
-//        public X509TrustManager trustManager;
+
     }
 
     public static SSLParams getSslSocketFactory(InputStream bksFile, String password, InputStream[] certificates) {
