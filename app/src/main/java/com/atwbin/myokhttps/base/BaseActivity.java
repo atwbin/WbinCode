@@ -47,6 +47,10 @@ public class BaseActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    public void setContentView3(View view) {
+        super.setContentView(view);
+        ButterKnife.bind(this);
+    }
     @Override
     public void setContentView(View view, ViewGroup.LayoutParams params) {
         super.setContentView(view, params);
