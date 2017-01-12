@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyOkHttps</string>
+    <string name="okgo">OkGo-让网络请求更简单</string>
+
+    <string name="simple_view_behavior">com.lzy.demo.ui.SimpleViewBehavior</string>
+    <string name="pic">请求图片</string>
+</resources>
