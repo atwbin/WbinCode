@@ -98,6 +98,7 @@ public class RxActivity extends BaseActivity {
             if (position == 0) startActivity(new Intent(RxActivity.this, RxCommonActivity.class));
             if (position == 1) startActivity(new Intent(RxActivity.this, RxBitmapActivity.class));
             if (position==2) startActivity(new Intent(RxActivity.this, RxFormUploadActivity.class));
+            if (position ==3)startActivity(new Intent(RxActivity.this,RxFileDownloadActivity.class));
         }
     }
 }
