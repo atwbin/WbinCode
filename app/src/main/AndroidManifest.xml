@@ -28,7 +28,8 @@
             android:name=".rxjava.RxCommonActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
-        <activity android:name=".rxjava.RxBitmapActivity"></activity>
+        <activity android:name=".rxjava.RxBitmapActivity" />
+        <activity android:name=".rxjava.RxFormUploadActivity"></activity>
     </application>
 
 </manifest>

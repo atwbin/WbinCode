@@ -10,7 +10,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.atwbin.myokhttps.R;
-import com.google.android.gms.appdatasearch.GetRecentContextCall;
 
 import java.io.File;
 import java.util.List;
