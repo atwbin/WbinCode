@@ -38,7 +38,6 @@ import okhttp3.Response;
  * ---有缓存时,网络请求失败 onBefore -> onCacheSuccess -> parseError -> onError -> onAfter<br>
  */
 public abstract class AbsCallback<T> implements Converter<T> {
-
     /** 请求网络开始前，UI线程 */
     public void onBefore(BaseRequest request) {
     }
