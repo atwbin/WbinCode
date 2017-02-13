@@ -32,7 +32,9 @@
         <activity android:name=".rxjava.RxFormUploadActivity" />
         <activity android:name=".rxjava.RxFileDownloadActivity" />
         <activity android:name=".okhttp.OkHttpActivity" />
-        <activity android:name=".okhttp.MethodActivity"></activity>
+        <activity android:name=".okhttp.MethodActivity" />
+        <activity android:name=".okhttp.BitmapRequestActivity" />
+        <activity android:name=".okhttp.CacheActivity"></activity>
     </application>
 
 </manifest>
