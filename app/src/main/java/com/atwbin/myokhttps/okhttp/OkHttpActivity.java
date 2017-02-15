@@ -46,7 +46,7 @@ public class OkHttpActivity extends BaseActivity {
 
     private void initData() {
         data = new ArrayList<>();
-        data.add(new String[]{"请求方法演示"," 目前支持 GET，HEAD，OPTIONS，POST，PUT，DELETE"});
+        data.add(new String[]{"请求方法演示", " 目前支持 GET，HEAD，OPTIONS，POST，PUT，DELETE"});
         data.add(new String[]{"请求图片", "请求服务器返回bitmap对象"});
         data.add(new String[]{"网络缓存基本用法", "默认提供了四种缓存模式，根据需要选择使用"});
         data.add(new String[]{"支持https请求", "支持 cer,bks 证书，支持双向认证"});
@@ -99,8 +99,12 @@ public class OkHttpActivity extends BaseActivity {
         @Override
         public void onClick(View view) {
             if (position == 0) startActivity(new Intent(OkHttpActivity.this, MethodActivity.class));
-            if (position ==1)startActivity(new Intent(OkHttpActivity.this,BitmapRequestActivity.class));
-            if (position ==2)startActivity(new Intent(OkHttpActivity.this,CacheActivity.class));
+            if (position == 1)
+                startActivity(new Intent(OkHttpActivity.this, BitmapRequestActivity.class));
+            if (position == 2) startActivity(new Intent(OkHttpActivity.this, CacheActivity.class));
+            if (position == 3) startActivity(new Intent(OkHttpActivity.this, HttpsActivity.class));
+            if (position == 4) startActivity(new Intent(OkHttpActivity.this, SyncActivity.class));
+            if (position == 5) startActivity(new Intent(OkHttpActivity.this, RedirectActivity.class));
 
         }
     }

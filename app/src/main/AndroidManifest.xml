@@ -34,7 +34,10 @@
         <activity android:name=".okhttp.OkHttpActivity" />
         <activity android:name=".okhttp.MethodActivity" />
         <activity android:name=".okhttp.BitmapRequestActivity" />
-        <activity android:name=".okhttp.CacheActivity"></activity>
+        <activity android:name=".okhttp.CacheActivity" />
+        <activity android:name=".okhttp.HttpsActivity" />
+        <activity android:name=".okhttp.SyncActivity" />
+        <activity android:name=".okhttp.RedirectActivity"></activity>
     </application>
 
 </manifest>

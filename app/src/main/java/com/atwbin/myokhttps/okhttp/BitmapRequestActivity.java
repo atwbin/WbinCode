@@ -49,7 +49,6 @@ public class BitmapRequestActivity extends BaseDetailActivity {
                     @Override
                     public void onError(Call call, Response response, Exception e) {
                         super.onError(call, response, e);
-
                         handleError(call, response);
                     }
                 });
