@@ -50,5 +50,6 @@ public class RedirectActivity extends BaseDetailActivity {
                         handleError(call, response);
                     }
                 });
+
     }
 }
