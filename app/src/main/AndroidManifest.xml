@@ -39,7 +39,8 @@
         <activity android:name=".okhttp.SyncActivity" />
         <activity android:name=".okhttp.RedirectActivity" />
         <activity android:name=".okhttp.JsonRequestActivity" />
-        <activity android:name=".okhttp.FileDownloadActivity"></activity>
+        <activity android:name=".okhttp.FileDownloadActivity" />
+        <activity android:name=".okhttp.FormUploadActivity"></activity>
     </application>
 
 </manifest>

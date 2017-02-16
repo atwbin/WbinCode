@@ -22,7 +22,6 @@ import okhttp3.Response;
 public class JsonRequestActivity extends BaseDetailActivity {
 
 
-
     @Override
     protected void onActivityCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_json_request);
@@ -38,7 +37,7 @@ public class JsonRequestActivity extends BaseDetailActivity {
 
 
     @OnClick(R.id.requestJson)
-    public  void requestJson(View view ){
+    public void requestJson(View view) {
         OkGo.get(Urls.URL_JSONOBJECT)
                 .tag(this)
                 .headers("header1", "headerValue1")//
@@ -46,20 +45,20 @@ public class JsonRequestActivity extends BaseDetailActivity {
                 .execute(new DialogCallback<LzyResponse<ServerModel>>(this) {
                     @Override
                     public void onSuccess(LzyResponse<ServerModel> serverModelLzyResponse, Call call, Response response) {
-                        handleResponse(serverModelLzyResponse.data,call,response);
+                        handleResponse(serverModelLzyResponse.data, call, response);
                     }
 
                     @Override
                     public void onError(Call call, Response response, Exception e) {
                         super.onError(call, response, e);
-                        handleError(call,response);
+                        handleError(call, response);
                     }
                 });
 
     }
 
     @OnClick(R.id.requestJsonArray)
-    public void requestJsonArray(View view){
+    public void requestJsonArray(View view) {
         OkGo.get(Urls.URL_JSONARRAY)//
                 .tag(this)//
                 .headers("header1", "headerValue1")//

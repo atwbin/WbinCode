@@ -15,6 +15,7 @@ import com.atwbin.myokhttps.base.BaseActivity;
 import com.atwbin.myokhttps.base.BaseRecyclerAdapter;
 import com.atwbin.myokhttps.base.DividerItemDecoration;
 import com.atwbin.myokhttps.okhttp.FileDownloadActivity;
+import com.atwbin.myokhttps.okhttp.FormUploadActivity;
 import com.atwbin.myokhttps.okhttp.JsonRequestActivity;
 import com.atwbin.myokhttps.okhttp.OkHttpActivity;
 import com.atwbin.myokhttps.rxjava.RxActivity;
@@ -205,6 +206,7 @@ public class MainActivity extends BaseActivity {
             if (position == 3) startActivity(new Intent(MainActivity.this, OkHttpActivity.class));
             if(position == 4)startActivity(new Intent(MainActivity.this,JsonRequestActivity.class));
             if (position ==5)startActivity(new Intent(MainActivity.this,FileDownloadActivity.class));
+            if (position ==6)startActivity(new Intent(MainActivity.this,FormUploadActivity.class));
         }
     }
 

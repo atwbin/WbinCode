@@ -11,6 +11,7 @@ import com.lzy.okgo.callback.StringCallback;
 
 import java.io.IOException;
 
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Response;
@@ -20,6 +21,7 @@ public class HttpsActivity extends BaseDetailActivity {
     @Override
     protected void onActivityCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_https);
+        ButterKnife.bind(this);
         setTitle("Https展示");
     }
 
@@ -53,7 +55,7 @@ public class HttpsActivity extends BaseDetailActivity {
 
 
     @OnClick(R.id.btn_https_request)
-    public void btn_https_request(View view)  {
+    public void btn_https_request(View view) {
         try {
             OkGo.get("https://kyfw.12306.cn/otn")
                     .tag(this)

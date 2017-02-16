@@ -18,6 +18,7 @@ import com.lzy.okgo.cache.CacheMode;
 
 import java.util.List;
 
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Response;
@@ -28,6 +29,7 @@ public class CacheActivity extends BaseDetailActivity {
     @Override
     protected void onActivityCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_cache);
+        ButterKnife.bind(this);
         setTitle("网络缓存基本用法");
     }
 
